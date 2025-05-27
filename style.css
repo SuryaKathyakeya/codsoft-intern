@@ -1,0 +1,250 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+  }
+  body {
+    background: linear-gradient(to bottom, #e0eafc, #cfdef3);
+    color: #222;
+    line-height: 1.6;
+    height: 100vh;
+  }
+  
+  header {
+    background: rgb(214, 214, 214);
+    color: rgb(29, 5, 5);
+    text-align: center;
+    padding: 60px 10px;
+    border-radius: 0 0 25px 25px;
+    min-height: 100vh;
+  }
+  
+  header h1 {
+    font-size: 3em;
+    animation: slideDown 1.5s ease-out;
+  }
+  
+  header h1 span {
+    color: #ffcc00;
+  }
+  
+  nav {
+    margin-top: 20px;
+  }
+  h2{
+    font-size: 2.5rem;
+    color: #222;
+    margin-bottom: 1.2rem;
+    text-align: center;
+    position: relative;
+  }
+  .button {
+    background: #8e4d36;
+    color: white;
+    padding:20px 20px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 25px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+  }
+  
+  .button:hover {
+    background-color: #131212;
+    transform: scale(1.05);
+  }
+  
+  section {
+    background: rgb(218, 218, 218);
+    padding: 20px;
+    margin: 0;
+    border-radius: 20px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+    animation: fadeIn 1.2s ease-in;
+  }
+  .profile-image {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #d7cc33;
+    margin: 20px auto;
+    display: block;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+  }
+  #About{
+    padding: 60px;
+    margin: 10px;
+    min-height: 100vh;
+    background-color:rgb(214, 214, 214);
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    font-size: 1.1rem;
+    color: #333;
+    transition: transform 0.3s ease;
+    box-sizing: border-box;
+  }
+  #About h2::after {
+    width: 60px;
+    height: 4px;
+    background-color: #8e4d36;
+    display: block;
+    margin: 10px auto 0;
+    border-radius: 5px;
+}
+#About h2 {
+    font-size: 2.5rem;
+    color: #222;
+    margin-bottom: 1.2rem;
+    text-align: center;
+    position: relative;
+}
+  #About p {
+    text-align:center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #444;
+    animation: fadeIn 1.5s ease;
+}
+#About em {
+    font-style: normal;
+    font-weight: bold;
+    color: #cfa605;
+}
+  
+  .profile-image:hover {
+    transform: rotate(5deg) scale(1.1);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+  }
+  
+  table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+  }
+  th {
+    background-color: #8e4d36;
+    color: white;
+  }
+  #Skills{
+    padding: 60px;
+    margin: 10px;
+    min-height: 100vh;
+  }
+  .skill-cell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  .skill-cell img {
+    width: 35px;
+    height: 35px;
+    transition: transform 0.3s ease;
+  }
+  .skill-cell img:hover {
+    transform: rotate(10deg) scale(1.2);
+  }
+  form {
+    margin-top: 20px;
+  }
+  form div {
+    margin-bottom: 12px;
+  }
+  #Projects{
+    padding: 60px;
+    margin: 10px;
+    min-height: 100vh;
+  }
+  #Contact{
+    padding: 60px;
+    margin: 10px;
+    min-height: 100vh;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 90%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #999;
+    transition: border-color 0.3s;
+  }
+  
+  input:focus,
+  textarea:focus {
+    border-color: #004aad;
+  }
+  
+  .submit {
+    background-color: #8e4d36;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .submit:hover {
+    background-color: #8e4d36;
+    transform: translateY(-2px);
+  }
+  
+  .top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #8e4d36;
+    color: white;
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+  }
+  
+  .top:hover {
+    background-color: #8e4d36;
+    transform: scale(1.1);
+  }
+  
+  footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 25px 10px;
+  }
+  
+  .icon {
+    font-size: 28px;
+    margin: 10px;
+    color: #a2593f;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .icon:hover {
+    color: #ffcc00;
+    transform: rotate(10deg) scale(1.2);
+  }
+  @keyframes slideDown {
+    0% { transform: translateY(-50px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+  }
+  
+  @keyframes fadeIn {
+    0% { opacity: 0; transform: scale(0.95); }
+    100% { opacity: 1; transform: scale(1); }
+  }
+  
+  

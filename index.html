@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Surya's Portfolio</title>
+  <link rel="stylesheet" href="style.css"/>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to <span>My Portfolio</span></h1>
+    <img src="sk.jpg" alt="Profile Photo" class="profile-image"/>
+    <h2>Surya Kathyakeya Boddi</h2>
+    <nav>
+      <a href="#About"><button class="button">About</button></a>
+      <a href="#Skills"><button class="button">Skills</button></a>
+      <a href="#Projects"><button class="button">Projects</button></a>
+      <a href="#Contact"><button class="button">Contact</button></a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="About">
+      <h2>About Me</h2><br>
+      <p>
+        Hi, I am <em>Surya Kathyakeya</em>, a passionate B.Tech Artificial Intelligence and Machine Learning student at <em>Saveetha University</em>.<br>
+         I am driven by curiosity and creativity, with a deep love for building innovative and helpful websites that solve real-world problems.<br>
+            I actively learning and improving my skills in Python programming, web development, and AI/ML,constantly exploring new tools and <br>technologies to build smarter and more efficient solutions.<br>
+            One thing I truly enjoy is managing my time between college academics and my personal projects — its both a challenge and a thrill! Balancing learning, coding, and experimenting with new ideas keeps me motivated and helps me grow both technically and creatively.<br>
+            Whether it is developing user-friendly platforms, integrating AI features, or working on projects that make everyday tasks easier,<br> I always aim to create something impactful and meaningful.<br>
+            My Main goal is to become a good <em>AI Generalist</em> with knowing all enough content for problem solving.<br>
+            If you'd like to know more about my projects, ideas, or want to collaborate, feel free to reach out!
+      </p>
+    </section>
+
+    <section id="Skills"><br>
+      <h2>My Skills</h2>
+      <table>
+        <tr>
+          <th>S.No</th>
+          <th>Skills</th>
+          <th>Remarks</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td class="skill-cell">
+            <img src="https://cdn-icons-png.flaticon.com/512/6132/6132222.png" alt="C" />
+          </td>
+          <td>Good grasp of logic & basic structure.</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td class="skill-cell">
+            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968350.png" alt="Python" />
+          </td>
+          <td>Comfortable with basic concepts and building simple projects.</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td class="skill-cell">
+            <img src="https://cdn-icons-png.flaticon.com/512/1051/1051277.png" alt="Web" />
+          </td>
+          <td>Skilled in building attractive, functional websites.</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td class="skill-cell">
+            <img src="https://cdn-icons-png.flaticon.com/512/4299/4299956.png" alt="SQL" />
+          </td>
+          <td>Basic understanding of relational databases.</td>
+        </tr>
+      </table>
+    </section>
+
+    <section id="Projects"><br>
+      <h2>My Projects</h2>
+      <table>
+        <tr><th>Project</th><th>Description</th></tr>
+        <tr><td>Basic Web Apps</td><td>Calculator, Weather API, E-commerce, Password Generator</td></tr>
+        <tr><td>Portfolio Website</td><td>Current portfolio made with HTML, CSS</td></tr>
+        <tr><td>Python Calculator</td><td>CLI calculator using basic Python logic</td></tr>
+      </table>
+    </section>
+
+    <section id="Contact">
+      <h2>Contact Me</h2>
+      <p>Feel free to reach out using the form below!</p>
+      <form>
+        <div>
+          <label>Name:</label>
+          <input type="text" placeholder="Your Name" required />
+        </div>
+        <div>
+          <label>Email:</label>
+          <input type="email" placeholder="Your Email" required />
+        </div>
+        <div>
+          <label>Gender:</label>
+          <input type="radio" name="gender" /> Male
+          <input type="radio" name="gender" /> Female
+        </div>
+        <div>
+          <label>Interests:</label>
+          <input type="checkbox" /> Coding
+          <input type="checkbox" /> Content Creation
+          <input type="checkbox" /> Gaming
+          <input type="checkbox" /> Reading
+        </div>
+        <div>
+          <label>Bio:</label>
+          <textarea rows="3" placeholder="Tell me about yourself..."></textarea>
+        </div>
+        <button class="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+
+  <button class="top" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">↑</button>
+
+  <footer>
+    <p>&copy; 2025 Surya Kathyakeya | All rights reserved</p>
+    <a class="icon" href="https://instagram.com/suryakathyakeya_17" target="_blank">
+      <ion-icon name="logo-instagram"></ion-icon>
+    </a>
+    <a class="icon" href="https://linkedin.com/in/surya-kathyakeya-boddi-" target="_blank">
+      <ion-icon name="logo-linkedin"></ion-icon>
+    </a>
+  </footer>
+
+</body>
+</html>
